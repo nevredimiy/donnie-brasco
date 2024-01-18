@@ -63,6 +63,7 @@ export default {
     toggleTheme() {
       if (!localStorage.getItem('theme-mode')) {
         localStorage.setItem('theme-mode', 'dark-theme')
+        document.documentElement.className = 'dark-theme'
         this.currentThemeMode = false
         return
       }
