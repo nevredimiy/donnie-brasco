@@ -35,7 +35,8 @@ import { data } from '@/data.json'
 
 export default {
   components: {
-    IconMoon, IconSun
+    IconMoon,
+    IconSun
   },
   created() {
     this.data = data
@@ -137,6 +138,7 @@ export default {
   padding: 15px 20px;
   max-height: 300px;
   overflow-y: auto;
+  z-index: 20;
   &__link {
     display: block;
     height: 40px;
@@ -159,10 +161,11 @@ export default {
   }
 }
 .header-top {
-  padding: 20px 0;
+  padding: 20px 15px;
   display: flex;
   justify-content: space-between;
   position: relative;
+
   &__search {
     padding: 5px 15px;
     background-color: var(--color-background);

@@ -1,5 +1,8 @@
 <template>
   <the-header />
+  <gallery-images>
+   
+  </gallery-images>
   <mafia-families />
   <the-location />
   <main class="container">
@@ -22,9 +25,10 @@ import TheHeader from '../components/TheHeader.vue'
 import FamilyItem from '../components/FamilyItem.vue'
 import MafiaFamilies from '../components/MafiaFamilies.vue'
 import TheLocation from '../components/TheLocation.vue'
+import GalleryImages from '../components/GalleryImages.vue'
 
 export default {
-  components: { TheHeader, TheHeader, FamilyItem, MafiaFamilies, TheLocation },
+  components: { TheHeader, TheHeader, FamilyItem, MafiaFamilies, TheLocation, GalleryImages },
 
   data() {
     return {
